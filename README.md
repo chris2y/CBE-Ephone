@@ -4,9 +4,12 @@
 
 ## Screenshots
 
-![Screenshot_20240624_164938](https://github.com/chris2y/CBE-Ephone/assets/105220772/ef6a79d4-549c-4f7c-803e-bb7000180247)
-![Screenshot_20240624_164901](https://github.com/chris2y/CBE-Ephone/assets/105220772/8c506328-a08f-4981-99f6-a8821992d1d1)
-![Screenshot_20240624_164837](https://github.com/chris2y/CBE-Ephone/assets/105220772/9b5c8c03-ff46-42e3-82f4-c321336ec244)
+## Screenshots
+
+<img src="https://github.com/chris2y/CBE-Ephone/assets/105220772/ef6a79d4-549c-4f7c-803e-bb7000180247" alt="Screenshot 1" width="300"/>
+<img src="https://github.com/chris2y/CBE-Ephone/assets/105220772/8c506328-a08f-4981-99f6-a8821992d1d1" alt="Screenshot 2" width="300"/>
+<img src="https://github.com/chris2y/CBE-Ephone/assets/105220772/9b5c8c03-ff46-42e3-82f4-c321336ec244" alt="Screenshot 3" width="300"/>
+
 
 
 ## Description
