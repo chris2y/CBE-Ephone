@@ -2,6 +2,13 @@
 
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
 
+## Screenshots
+
+![Screenshot_20240624_164938](https://github.com/chris2y/CBE-Ephone/assets/105220772/ef6a79d4-549c-4f7c-803e-bb7000180247)
+![Screenshot_20240624_164901](https://github.com/chris2y/CBE-Ephone/assets/105220772/8c506328-a08f-4981-99f6-a8821992d1d1)
+![Screenshot_20240624_164837](https://github.com/chris2y/CBE-Ephone/assets/105220772/9b5c8c03-ff46-42e3-82f4-c321336ec244)
+
+
 ## Description
 
 CBE SMS Parser App is an Android application designed to parse SMS messages from the Commercial Bank of Ethiopia (CBE). It provides users with detailed transaction history and account balance trends directly from SMS notifications. The app automatically extracts transaction details and visualizes account balance changes over time, offering real-time updates as new SMS messages are received.
