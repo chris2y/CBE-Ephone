@@ -60,7 +60,7 @@ The app requires the following permission:
 
 The app follows the MVVM (Model-View-ViewModel) architecture pattern and incorporates modern Android development practices:
 - LiveData for data observation
-- 
+  
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
