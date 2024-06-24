@@ -51,9 +51,9 @@ class ParsedSmsAdapter : ListAdapter<ParsedSmsDataClass, ParsedSmsAdapter.ViewHo
             debitCreditTextView.text = buildSpannedString {
                 append(typeLabel)
                 color(if (sms.debitOrCredit == "debit")
-                    itemView.context.getColor(R.color.green)
+                    itemView.context.getColor(R.color.red)
                 else
-                    itemView.context.getColor(R.color.red)) {
+                    itemView.context.getColor(R.color.green)) {
                     append(typeValue)
                 }
             }

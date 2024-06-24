@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatDelegate
 
 class SplashScreen : AppCompatActivity() {
 
-    private val splashTimeOut: Long = 2000 // 3 seconds
+    private val splashTimeOut: Long = 2000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,12 +27,11 @@ class SplashScreen : AppCompatActivity() {
 
         val imageView: ImageView = findViewById(R.id.splash)
 
-        // Create a fade-in animation using ObjectAnimator
         val fadeIn = ObjectAnimator.ofFloat(imageView, "alpha", 0f, 1f)
-        fadeIn.duration = 1800 // duration of the animation in milliseconds
+        fadeIn.duration = 1800
         fadeIn.start()
 
-        // Handler to start the main activity after the timeout
+
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()

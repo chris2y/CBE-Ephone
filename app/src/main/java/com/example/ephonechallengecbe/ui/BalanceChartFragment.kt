@@ -1,5 +1,6 @@
 package com.example.ephonechallengecbe.ui
 
+import android.icu.text.SimpleDateFormat
 import com.example.ephonechallengecbe.data.ParsedSmsDataClass
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,6 +15,9 @@ import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.data.Entry
 import com.github.mikephil.charting.data.LineData
 import com.github.mikephil.charting.data.LineDataSet
+import com.github.mikephil.charting.formatter.IndexAxisValueFormatter
+import java.util.Date
+import java.util.Locale
 
 class BalanceChartFragment : Fragment() {
 
@@ -43,21 +47,30 @@ class BalanceChartFragment : Fragment() {
 
         val dataSet = LineDataSet(entries, "Balance")
         dataSet.color = ContextCompat.getColor(requireContext(), R.color.chart_line_color)
-        dataSet.valueTextColor = ContextCompat.getColor(requireContext(),
-            R.color.chart_value_text_color
-        ) // Customize value text color
+        dataSet.valueTextColor = ContextCompat.getColor(requireContext(), R.color.chart_value_text_color)
         dataSet.lineWidth = 2f
-        dataSet.setDrawValues(false) // Optionally, turn off value labels on the chart
-        dataSet.setDrawCircles(false) // Optionally, turn off data point circles
+        dataSet.setDrawValues(false) 
+        dataSet.setDrawCircles(false)
 
         val lineData = LineData(dataSet)
         lineChart.data = lineData
 
-        lineChart.description.isEnabled = false // Disable description label
+        // Format the x-axis to show dates
+        val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+        val dates = smsData.asReversed().map { sms ->
+            dateFormat.format(Date(sms.timestamp))
+        }
+
+        lineChart.xAxis.valueFormatter = IndexAxisValueFormatter(dates)
+        lineChart.xAxis.granularity = 1f
+        lineChart.xAxis.labelRotationAngle = -45f
+
+        lineChart.description.isEnabled = false
         lineChart.setTouchEnabled(true)
         lineChart.setPinchZoom(true)
-        lineChart.invalidate() // Refresh the chart
+        lineChart.invalidate()
     }
+
 
 
 }
