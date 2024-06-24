@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/parsedSmsFragment">
+
+    <fragment
+        android:id="@+id/parsedSmsFragment"
+        android:name="com.example.ephonechallengecbe.ui.ParsedSmsFragment"
+        android:label="Parsed SMS" />
+
+    <fragment
+        android:id="@+id/balanceChartFragment"
+        android:name="com.example.ephonechallengecbe.ui.BalanceChartFragment"
+        android:label="Balance Chart" />
+
+</navigation>

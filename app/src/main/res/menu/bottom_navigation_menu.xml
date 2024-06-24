@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/parsedSmsFragment"
+        android:icon="@drawable/transsaction"
+        android:title="Transactions" />
+    <item
+        android:id="@+id/balanceChartFragment"
+        android:icon="@drawable/chart"
+        android:title="Balance Chart" />
+</menu>
